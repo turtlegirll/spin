@@ -17,6 +17,9 @@ import { CustomContentPage } from './custom-content.page';
     CustomContentPageRoutingModule,
 
   ],
+  exports: [
+    CustomContentPage
+  ],
   declarations: [CustomContentPage]
 })
 export class CustomContentPageModule {}
