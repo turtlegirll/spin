@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Platform} from "@ionic/angular";
 
 @Component({
   selector: 'app-custom-content',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomContentPage implements OnInit {
 
-  constructor() { }
+  private platform: Platform;
+
+  constructor(platform: Platform) {
+    this.platform = platform;
+  }
 
   ngOnInit() {
   }
