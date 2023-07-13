@@ -7,17 +7,19 @@ import {RouterModule} from "@angular/router";
 
 import { HomePageRoutingModule } from './home-routing.module';
 import {CustomContentPageModule} from "../custom-content/custom-content.module";
+import {SpinningWheelModule} from "../spinning-wheel/spinningwheel.module";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    RouterModule,
-    CustomContentPageModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+        RouterModule,
+        CustomContentPageModule,
+        SpinningWheelModule
+    ],
   declarations: [HomePage]
 })
 export class HomePageModule {}

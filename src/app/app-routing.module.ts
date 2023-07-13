@@ -12,8 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'custom-content',
-    loadChildren: () => import('./custom-content/custom-content.module').then(m => m.CustomContentPageModule)
+    path: 'spinning-wheel',
+    loadChildren: () => import('./spinning-wheel/spinningwheel.module').then(m => m.SpinningWheelModule)
   },
 ];
 

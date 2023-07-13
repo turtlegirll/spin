@@ -1,0 +1,10 @@
+<div id="mainbox" class="mainbox" [class.animate]="isAnimating">
+  <div id="box" class="box">
+    <div *ngFor="let option of options; let i = index" class="box-item" [style.background-color]="option.color">
+      <span [style.transform]="'rotate(' + (360 / options.length * (i + 0.5)) + 'deg)'">
+        <b>{{ option.name }}</b>
+      </span>
+    </div>
+  </div>
+</div>
+<button class="spin" (click)="startAnimation()" [disabled]="isAnimating">SPIN</button>
