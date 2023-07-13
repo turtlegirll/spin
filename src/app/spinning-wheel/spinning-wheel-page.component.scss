@@ -1,17 +1,34 @@
-*{
+.msgcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #1c1c1d;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+.wheel {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  min-height: 100vh;
-  background: #000000;
 }
-.container{
+
+
+.container {
   height: 350px;
   width: 350px;
   background: #000000;
@@ -20,11 +37,13 @@ body{
   overflow: hidden;
   box-shadow: 0 0 10px gray;
   transition: 2s all;
+
 }
-.container div{
+
+.container div {
   height: 51%;
   width: 200px;
-  clip-path: polygon(60% 0,50% 100%, 0 0);
+  clip-path: polygon(60% 0, 50% 100%, 0 0);
   transform: translateX(-50%);
   transform-origin: bottom;
   position: absolute;
@@ -41,90 +60,90 @@ body{
   position: absolute;
   top: 40%;
   left: 40%;
-  transform: translate(-50%, -50%)rotate(-15deg);
+  transform: translate(-50%, -50%) rotate(-15deg);
   writing-mode: vertical-lr; /* Added writing-mode property to set vertical text flow */
 
 }
 
-.container .span1{
+.container .span1 {
   background: #ffd2ea;
   transform: rotate(0deg);
 }
 
-.container .span2{
+.container .span2 {
   background: #ffc2df;
   transform: rotate(30deg);
 }
 
-.container .span3{
+.container .span3 {
   background: #ffa4d4;
   transform: rotate(60deg);
 }
 
-.container .span4{
+.container .span4 {
   background: #ffcc99;
   transform: rotate(90deg);
 }
 
-.container .span5{
+.container .span5 {
   background: #ffe98a;
   transform: rotate(120deg);
 }
 
-.container .span6{
+.container .span6 {
   background: #79e8b3;
   transform: rotate(150deg);
 }
 
-.container .span7{
+.container .span7 {
   background: #b3ffc7;
   transform: rotate(180deg);
 }
 
-.container .span8{
+.container .span8 {
   background: #bbefff;
   transform: rotate(210deg);
 }
 
-.container .span9{
+.container .span9 {
   background: #99e2ff;
   transform: rotate(240deg);
 }
 
-.container .span10{
+.container .span10 {
   background: #80b1ff;
   transform: rotate(270deg);
 }
 
-.container .span11{
+.container .span11 {
   background: #cbc5ff;
   transform: rotate(300deg);
 }
 
 .container .span12 {
+  clip-path: polygon(52% 0, 50% 100%, 0 0);
   background: #a4a4f4;
-  transform: rotate(325deg);
+  transform: rotate(330deg);
 }
 
-#spin{
+.spin {
   height: 60px;
   width: 200px;
-  background: #e0c4ff;
+  background: #a3a3f3;
   position: absolute;
-  margin-top: 500px;
-  font-size: 30px;
+  margin-top: 600px;
   border-radius: 25px;
   color: white;
-  font-weight: 1000;
-  letter-spacing: 4px;
-  border: 1px solid white;
+  font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 5px 10px gray;
+  font-size: 20px;
+  box-shadow:none;
   transition: 0.2s all;
 }
 
-#spin:hover{
-  box-shadow: none;
+.spin:hover {
+  box-shadow: 0 5px 10px #c9c3fe;
+
 }
 
 .stopper {
@@ -136,5 +155,4 @@ body{
   margin-top: -400px;
   border: 1px solid #000000; /* Added black border */
 }
-
 
