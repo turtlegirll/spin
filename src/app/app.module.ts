@@ -6,11 +6,10 @@ import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
 import {RouterModule} from "@angular/router";
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import {SpinningWheelModule} from "./spinning-wheel/spinningwheel.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, RouterModule,SpinningWheelModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, RouterModule],
   providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}],
   bootstrap: [AppComponent],
 })
