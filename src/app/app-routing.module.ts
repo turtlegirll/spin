@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'menu/spin-wheel' // Redirect all other unknown paths to 'menu/spin-wheel'
+  },  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   }
+
 ];
 @NgModule({
   imports: [

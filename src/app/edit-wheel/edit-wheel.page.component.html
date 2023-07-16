@@ -1,0 +1,29 @@
+<!-- rename-options.component.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Change Slices
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-list *ngFor="let option of options; let i = index">
+    <ion-item>
+      <ion-input label="Option {{ i + 1 }}" [readonly]="true" [(ngModel)]="renamedOptions[i]"></ion-input>
+      <ion-button fill="clear" (click)="showModal(options[i], i)">Rename</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+
+
+
+
+

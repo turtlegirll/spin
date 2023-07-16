@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Spiny
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="msgcon" *ngIf="message!=='' " style="margin-bottom: 3rem">
+    <div class="message">
+      {{this.message}}
+    </div>
+  </div>
+
+  <div class="wheel">
+    <div class="container">
+      <div *ngFor="let option of options; let i = index" [ngClass]="'span' + (i + 1)">
+        <div class="text-styling">{{ option }}</div>
+      </div>
+    </div>
+    <div class="stopper" style="margin-bottom: 4rem"></div>
+    <button class="spin2" (click)="spinWheel()">Spin</button>
+  </div>
+
+
+</ion-content>
+
