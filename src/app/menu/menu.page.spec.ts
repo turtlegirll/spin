@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MenuPage } from './menu.page';
+import {async} from "rxjs";
 
 describe('MenuPage', () => {
   let component: MenuPage;

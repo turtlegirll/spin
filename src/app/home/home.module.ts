@@ -6,7 +6,7 @@ import {HomePage} from './home.page';
 import {RouterModule} from "@angular/router";
 
 import {HomePageRoutingModule} from './home-routing.module';
-import {SpinningWheelModule} from "../spinning-wheel/spinningwheel.module";
+import {SpinningWheelModule} from "../spinning-wheel/spinning-wheel.module";
 import {EditWheelPageModule} from "../edit-wheel/edit-wheel.module";
 import {MenuModule} from "../menu/menu.module";
 
