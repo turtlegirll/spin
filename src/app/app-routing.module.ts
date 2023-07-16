@@ -14,7 +14,15 @@ const routes: Routes = [
   {
     path: 'spinning-wheel',
     loadChildren: () => import('./spinning-wheel/spinningwheel.module').then(m => m.SpinningWheelModule)
+  },  {
+    path: 'edit-wheel',
+    loadChildren: () => import('./edit-wheel/edit-wheel.module').then( m => m.EditWheelPageModule)
   },
+  {
+    path: 'edit-wheel',
+    loadChildren: () => import('./edit-wheel/edit-wheel.module').then( m => m.EditWheelPageModule)
+  },
+
 ];
 
 @NgModule({

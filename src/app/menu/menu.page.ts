@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {Platform} from "@ionic/angular";
 
 @Component({
-  selector: 'app-custom-content',
-  templateUrl: './custom-content.page.html',
-  styleUrls: ['./custom-content.page.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.page.html',
+  styleUrls: ['./menu.page.scss'],
 })
-export class CustomContentPage implements OnInit {
+export class MenuPage implements OnInit {
 
   private platform: Platform;
 

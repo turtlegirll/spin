@@ -1,20 +1,14 @@
-<app-custom-content></app-custom-content>
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<app-menu></app-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container"><app-spinning-wheel></app-spinning-wheel>
-
-  </div>
-</ion-content>
+  <ion-content class="ion-padding">
+    <app-spinning-wheel></app-spinning-wheel>
+  </ion-content>
+</div>

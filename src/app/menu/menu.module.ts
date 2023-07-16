@@ -5,21 +5,21 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CustomContentPageRoutingModule } from './custom-content-routing.module';
+import {MenuRoutingModule} from './menu-routing.module';
 
-import { CustomContentPage } from './custom-content.page';
+import { MenuPage } from './menu.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CustomContentPageRoutingModule,
+    MenuRoutingModule,
 
   ],
   exports: [
-    CustomContentPage
+    MenuPage
   ],
-  declarations: [CustomContentPage]
+  declarations: [MenuPage]
 })
-export class CustomContentPageModule {}
+export class MenuModule {}
