@@ -15,10 +15,13 @@
 
   <ion-list *ngFor="let option of options; let i = index">
     <ion-item>
-      <ion-input label="Option {{ i + 1 }}" [readonly]="true" [(ngModel)]="renamedOptions[i]"></ion-input>
-      <ion-button fill="clear" (click)="showModal(options[i], i)">Rename</ion-button>
+      <ion-input label="Option {{ i + 1 }}" [(ngModel)]="renamedOptions[i]"></ion-input>
+      <!--      <ion-button fill="clear" (click)="showModal(options[i], i)">Rename</ion-button>-->
+
     </ion-item>
+
   </ion-list>
+  <ion-button  expand="full" fill="clear" color="secondary"  (click)="renameOptions()">Save changes</ion-button>
 </ion-content>
 
 

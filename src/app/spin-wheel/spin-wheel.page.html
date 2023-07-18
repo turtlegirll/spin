@@ -11,11 +11,11 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div class="msgcon" *ngIf="message!=='' " style="margin-bottom: 3rem">
-    <div class="message">
-      {{this.message}}
-    </div>
+
+  <div class="message" *ngIf="message!==''">
+    {{this.message}}
   </div>
+
 
   <div class="wheel">
     <div class="container">
@@ -23,7 +23,7 @@
         <div class="text-styling">{{ option }}</div>
       </div>
     </div>
-    <div class="stopper" style="margin-bottom: 4rem"></div>
+    <div class="stopper" style="margin-bottom: 3.8rem"></div>
     <button class="spin2" (click)="spinWheel()">Spin</button>
   </div>
 
